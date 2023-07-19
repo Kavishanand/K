@@ -1,45 +1,54 @@
 #Keychains for sale,for real this time.
-
 print('Ye old Keychain shoppe')
- 
 
-def add_keychain():
-    print('ADD KEYCHAIN')
-    menu_function()
-def remove_keychain():
-    print('REMOVE KEYCHAIN')
-    menu_function()
-def view_order():
-    print('VIEW ORDER')
-    menu_function()
-def checkout():
-    print('CHECKOUT')
+current=0
+price=10
 
-def menu_function():
+def add_keychain(current):
+    add=int(input(f"you have {current} key chains, how many add :"))
+    current=current+add
+    print(f"now you have {current}keychains")
+    return current
+    
+def remove_keychain(current):
+    remove=int(input(f"you have {current} key chains, how many remove :"))
+    current= current-remove
+    print(f"now you have {current}keychains")
+    return current
+    
+def view_order(current,price):
+    
+    print(f"you have {current} keychains")
+    print(f"keychain cost ${price} each")
+    price=current*price
+    print(f"total cost is ${price}")
+    return price
+          
+def checkout(current,price):
+    print("check out")
+    name=str(input("what is your name? "))
+    print(f"you have {current}keychains.")
+    print(f"keychain cost $10 each.\nTotal cost is ${price}")
+    print(f"Thanks for you order{name}!")
+
+
+while True:
+
     menu=int(input('1. Add Keychain to order\n2. Remove Keychain from Order \n3. View Current Order\n4. Check out\nPlease enter your choice  '))
-
-
+    
     if menu==1:
-        add=0
-        add=input(f"You have {add} keychains.How manyto add? ")
-        print(f"you now have{add+add}keychains.")
-        add_keychain()
+        current=add_keychain(current)
     
     elif menu==2:
-        sub=0
-        sub=input(f"you have {add}keychains.How many to remove? ")
-        print(f"Tou have {add-sub}keychains.")
-        remove_keychain()
+        current=remove_keychain(current)
 
     elif menu==3:
-        cost=10
-        order=input(f"You have {add-sub}Keychains.\nKeychain cost ${cost}each\nTotal cost is ${cost*add-sub}.")
-        view_order()
+        price=view_order(current,price)
 
-    else:
-        checkout()
-        name=input(f"What is your name?")
-        key=input(f"You have {add-sub}keychains.\nKeychain cost ${cost}each.\nTotal cost is ${cost*add-sub}.\nThanks for your order.{name}")
+    elif menu==4:
+        checkout(current,price)
+        break
+    
 
 
 
