@@ -8,10 +8,10 @@ vegetables=[]
 for item in item_list:
     if item['category']=='fruit':
         fruits.append(item['name'])
-        print(fruits)
+        print("name":fruits)
         
     elif item['category']=='vegetable':
         vegetables.append(item['name'])
-        print(vegetables)
+        print("name":vegetables)
 
     
