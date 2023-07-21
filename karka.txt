@@ -1,2 +1,12 @@
-i'm kavish 
- i'm 22 years old
+month:1,
+unit consumed:100,
+bill amount200
+month:2,
+unit consumed:150,
+bill amount300
+month:3,
+unit consumed:300,
+bill amount1500
+month:4,
+unit consumed:400,
+bill amount2000
