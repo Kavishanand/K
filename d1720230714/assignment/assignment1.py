@@ -29,12 +29,12 @@ for i in details:
         place=i["place"]
         print(f"i am {name},i am {age} years old,and im from {place}.")
 
-'''for i in details:
+for i in details:
         age=int(i["age"])
         if age>21:
                 name=i["name"]
                 place=i["place"]
-                print(f"i am {name},and im from {place}.")'''
+                print(f"i am {name},and im from {place}.")
     
 
 

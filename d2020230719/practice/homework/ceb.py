@@ -36,7 +36,10 @@ def calculate_electricity_bill():
             #print(f"units consumed :{unit}\nbill amount{rate4}")
         appen={"month":month,"unit consumed":unit,"bill amount":rate}
         dic.append(appen)
-    return dic       
+    print(f"total:{tot}")
+    
+    return dic  
+         
 
 a=calculate_electricity_bill()
 file=open("/home/kavish/karka/karka.txt","w")
@@ -54,6 +57,14 @@ file=open("/home/kavish/karka/karka.txt","r")
 print(file.read())
 
 #dictionary to json
+
+import json
+
+b=json.dumps(a)
+print(type(b))
+
+c=json.loads(b)
+print(type(c))
 
 
 

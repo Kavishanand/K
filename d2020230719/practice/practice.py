@@ -14,7 +14,7 @@ for line in file:
 
 file=open("/home/kavish/karka/karka.txt","w")
 data=file.write("i'm kavish \n i'm 22 years old")
-print(data.write)
+print(data-)
 file.close()
 
 '''file=open("/home/kavish//karka/karka.txt","r")

@@ -25,9 +25,9 @@ details=[{"name":"kavish",
                 "social":67}}
           ]
 
-for i in details():
+for i in details:
     sslc=i["SSLC"]["tamil"]
-    print()
+    print(sslc)
                              
                              
 

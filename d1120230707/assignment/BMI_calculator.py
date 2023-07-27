@@ -1,9 +1,9 @@
-#height=float(input('Your height in m:'))
-#weight=float(input('Your weight in kg:'))
+height=float(input('Your height in m:'))
+weight=float(input('Your weight in kg:'))
 
 def new(weight,height):
     BMI=(weight/height**2)
+    print(BMI)
     return BMI
 
-    print(BMI)
-#new(weight,height)
+new(weight,height)

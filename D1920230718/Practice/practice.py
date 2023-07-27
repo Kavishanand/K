@@ -21,7 +21,5 @@ Educational_details=[{"study":"Bsc.chemistry",
                                         ]
                     }]         
 def semestermarks
-for i in Educational_details():
-    print(i["study","college"])
-    for sem in semestermarks():
+for i in Educational_details:
 

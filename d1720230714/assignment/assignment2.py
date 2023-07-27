@@ -36,18 +36,18 @@ stats=[
     "Top batting score": [105,131,164,130,128]}
     ]
 
-'''for i in stats:
+for i in stats:
     centuries=int(i["Number of centuries"])
     if centuries>10:
         name=i["Name"]
-        print(name)'''
+        print(name)
 
 
-'''for i in stats:
+for i in stats:
     Hat_tricks=(i["Hat-tricks wickets"])
     if Hat_tricks>5:
         name=i["Name"]
-        print(name)'''
+        print(name)
 
 
 def batting_score():

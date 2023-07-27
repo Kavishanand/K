@@ -43,7 +43,7 @@ for i in My_resume["Educational_qualification"]:
 
 print(My_resume["personal details"]["Address"]["city"])
 
-print(My_resume["personal details"]["Address"]["city"])
+
         
         
         
